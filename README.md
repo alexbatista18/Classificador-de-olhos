@@ -11,8 +11,12 @@ Processamento do Sinal: O sinal EEG foi processado para destacar a atividade nos
 
 Segmentação do Sinal e Extração de Características: Cada categoria foi segmentada em 30 janelas, para cada janela, foi calculada a transformada de Welch, técnica para estimar a densidade espectral de potência. As bandas de interesse, relacionadas à banda alfa, foram identificadas e somadas para cada janela.
 
-##Treinamento
+## Treinamento
 O arquivo '[treino_class.py](https://github.com/alexbatista18/Classificador-de-olhos/blob/main/treino_class.py)' contém o código desenvolvido para o treinamento do classificador utilizandos os dados dispostos.
 
-##Aplicação do Classificador
-O classificador foi aplicando em um sofwater chamado [OpenVibe](http://openvibe.inria.fr/) próprio para aquisição de sinais cerebrais. Dessa forma pode-se efetuar o teste do classificador em tempo real. Neste caso 
+## Aplicação do Classificador
+O classificador foi aplicado em um sofwater chamado [OpenVibe](http://openvibe.inria.fr/) próprio para aquisição de sinais cerebrais em tempo real. Como podem ver na iamgem abaixo, a box chamada 'Python 3 scripting' é utilizada para acessar o script '[aply_class.py](https://github.com/alexbatista18/Classificador-de-olhos/blob/main/aply_class.py)'.
+
+![classificador](https://github.com/alexbatista18/Classificador-de-olhos/assets/129801029/b7d3ef1f-af85-4d23-88f3-989768425f4a)
+
+Foram utilizados os mesmo dados de treino apenas para verificar a integridade do código.
