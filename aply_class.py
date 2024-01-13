@@ -4,7 +4,7 @@ from collections import deque
 import joblib
 
 #importanto modelo já treinado.
-clf = joblib.load('C:/Users/Alex/Desktop/ISD/open and close eyes/modelo_treinado.pkl')
+clf = joblib.load('modelo_treinado.pkl')
 
 #função para efetuar a soma das frequencias de interesse
 def som_win(data):
